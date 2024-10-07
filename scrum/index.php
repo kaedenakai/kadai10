@@ -14,7 +14,7 @@ sschk();
 <head>
   <meta charset="UTF-8">
   <title>ホーム</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
   <style>div{padding: 10px;font-size:16px;}</style>
 </head>
 <body>
@@ -37,8 +37,17 @@ sschk();
 
     <h3>レトロスペクティブ大全</h3>
     <ul>
-    <li><a href="touroku.php">振り返り手法を記録する</a></li>
-    <li><a href="select.php">振り返り手法を参照する</a></li>
+    <?php if($_SESSION["kanri_flg"]=="2"){ ?>
+      <li><a href="insert_po.php">アンケートに回答する（PO）</a></li>
+    <?php } ?>
+    <?php if($_SESSION["kanri_flg"]=="3"){ ?>
+      <li><a href="insert_dev.php">アンケートに回答する（DEV）</a></li>
+    <?php } ?>
+    <?php if($_SESSION["kanri_flg"]=="1"){ ?>
+      <li><a href="po_result.php">POのアンケート結果を確認する</a></li>
+      <li><a href="dev_result.php">Devのアンケート結果を確認する</a></li>
+
+    <?php } ?>
     </ul>
 </body>
 </html>

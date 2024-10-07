@@ -11,6 +11,11 @@ $lpw = $_POST["lpw"]; //lpw
 //1.  DB接続します
 include("funcs.php");
 $pdo = db_conn();
+// データベース接続エラーチェック
+if (!$pdo) {
+    die('データベースに接続できません: ' . mysqli_connect_error());
+}
+
 
 //2. データ登録SQL作成、ハッシュ化して照会
 //* PasswordがHash化→条件はlidのみ！！

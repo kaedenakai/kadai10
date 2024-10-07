@@ -1,7 +1,7 @@
 <?php
 session_start();
-//※htdocsと同じ階層に「includes」を作成してfuncs.phpを入れましょう！
-//include "../../includes/funcs.php";
+// //※htdocsと同じ階層に「includes」を作成してfuncs.phpを入れましょう！
+// //include "../../includes/funcs.php";
 include("funcs.php");
 sschk();
 ?>
@@ -31,8 +31,9 @@ sschk();
      <label>Login ID：<input type="text" name="lid"></label><br>
      <label>Login PW<input type="text" name="lpw"></label><br>
      <label>管理FLG：
-      一般<input type="radio" name="kanri_flg" value="0">
       管理者<input type="radio" name="kanri_flg" value="1">
+      PO<input type="radio" name="kanri_flg" value="2">
+      開発者<input type="radio" name="kanri_flg" value="3">
     </label>
     <br>
      <!-- <label>退会FLG：<input type="text" name="life_flg"></label><br> -->

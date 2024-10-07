@@ -66,9 +66,9 @@ echo '<script>console.log(' . json_encode($json) . ');</script>';
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- DataTablesのCSSを読み込む -->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css"> -->
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
-<script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
+<!-- <script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script> -->
 <style>div{padding: 10px;font-size:16px;}
   /* DataTablesのカスタムスタイリング */
   .dataTables_wrapper {
